@@ -1,0 +1,29 @@
+@import "../../style/variables.scss";
+
+.wrapperHamburger {
+	width: 24px;
+	height: 24px;
+	border-radius: 100%;
+	border: 2px solid $grey-color;
+	cursor: pointer;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.line {
+	display: block;
+	width: 14px;
+	height: 1px;
+	background: $grey-color;
+	margin-top: 3px;
+}
+.line:first-child {
+	margin-top: 0;
+}
+
+@media only screen and (max-width: 767px) {
+	.wrapperHamburger {
+		display: flex;
+	}	
+}
