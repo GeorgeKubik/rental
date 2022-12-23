@@ -48,6 +48,12 @@
 								Квартиры на сутки
 								<IconFlat className={styles.iconFlat}/>
 							</Link>
+							{/* <select name="select" id="select">
+								<option value="1">1</option>
+								<option selected value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select> */}
 						</li>
 						<li>
 							<Link to="/house" className={styles.rentalMenuItem}>

@@ -1,12 +1,13 @@
 import './App.scss';
 import Header from '../Header/index';
 import MainPage from '../pages/MainPage/index';
-import Footer from '../Footer';
-import FlatsPage from '../pages/FlatsPage';
-import HousePage from '../pages/HousePage';
-import BothPage from '../pages/BothPage';
-import AutoPage from '../pages/AutoPage';
-import NewsPage from '../pages/NewsPage';
+import Footer from '../Footer/index';
+import FlatsPage from '../pages/FlatsPage/index';
+import HousePage from '../pages/HousePage/index';
+import BothPage from '../pages/BothPage/index';
+import AutoPage from '../pages/AutoPage/index';
+import NewsPage from '../pages/NewsPage/index';
+
 
 
 import {Routes, Route} from 'react-router-dom';

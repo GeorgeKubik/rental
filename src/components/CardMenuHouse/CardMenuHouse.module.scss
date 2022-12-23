@@ -1,0 +1,58 @@
+
+	.wrapper {
+		position: relative;
+		max-width: 407px;
+		max-height: 270px;
+	}
+	.subTitle {
+		position: absolute;
+		top: 37px;
+		left: 37px;
+		font-weight: 700;
+		font-size: 13px;
+		line-height: 16px;
+		text-transform: uppercase;
+		background: linear-gradient(90deg, #9D94FF 0%, #6B50E9 94.5%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+	.title {
+		position: absolute;
+		top: 74px;
+		left: 37px;
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 30px;
+		color: #FFFFFF;
+		text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+	}
+	.vector {
+		position: absolute;	
+		bottom: 23px;
+		right: 21px;
+		width: 13.1px;
+		height: 13.1px;
+		border: 1px solid #fff;
+		padding: 13.14px;
+		border-radius: 100%;
+	}
+	.town {
+		/* display: none; */
+		position: absolute;
+		top: 126px;
+		left: 37px;
+		padding: 8px 14px;
+		background: #664EF9;
+		border-radius: 16px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+		color: rgba(255, 255, 255, 0.7);
+	}
+	.bg {
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+	}
+	

@@ -60,7 +60,7 @@
 //Rental wrapper
 
 .rentalWrapper {
-	max-height: 60px;
+	height: 60px;
 	padding: 11px 45px 0 45px;
 	background: #fff;
 	display: flex;
@@ -74,6 +74,7 @@
 }
 
 .rentalMenu {
+	margin-top: 20px;
 	padding: 0 40px;
 	width: 54%;
 	display: flex;
@@ -83,14 +84,15 @@
 
 .rentalMenuItem {
 	position: relative;
+	height: 40px;
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 17px;
 	color: #1e2123;
 	display: flex;
 	justify-content: flex-start;
-	align-items: center;
-	border-bottom: 3px solid transparent;
+	align-items: flex-start;
+	box-sizing: border-box;
 	&:hover {
 		border-bottom: 3px solid $gold-color;
 	}
@@ -100,7 +102,7 @@
 	width: 154px;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .iconFlat {

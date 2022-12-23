@@ -1,14 +1,26 @@
 
 	import styles from './MainPage.module.scss';
-	import backgroundImage from '../../../assets/img/mainPage/bg_mainPage.png';
+	import { useAppDispatch, useAppSelector } from '../../../hook/redux';
+	import { useEffect } from 'react';
+	import {fetchData} from '../../../store/actions/flatsActions';
+	import Filters from '../../Filters/index';
+	import CardsMenu from '../../CardsMenu/index';
+	
 
-	const MainWindow = () => {
+	const MainPage = () => {
+		const dispatch = useAppDispatch();
+		const {error, loading, filters} = useAppSelector(state => state.flats);
+
+		useEffect(() => {
+			dispatch(fetchData())
+		}, [])
+
 		return (
-			<div className={styles.wrapper}>
-				<h1 className={styles.title}>Sdaem.by - у нас живут <span className={styles.titleTextYellow}>ваши объявления</span></h1>
-				<img className={styles.bgImage} src={backgroundImage} alt="bgImage" />
-			</div>
+			<>
+				<Filters />
+				<CardsMenu/>
+			</>
 		)
 	}
 
-	export default MainWindow;
+	export default MainPage;

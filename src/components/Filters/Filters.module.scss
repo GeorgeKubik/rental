@@ -1,0 +1,52 @@
+
+.wrapper {
+	position: relative;
+	background: #f8f8f8;
+	position: relative;
+	max-height: 430px;
+	margin-top: 14px;
+}
+
+.title {
+	position: absolute;
+	top: 17%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-weight: 700;
+	font-size: 2vw;
+	color: #ffffff;
+	text-shadow: 0px 2px 5px rgba(0, 14, 142, 0.3);
+}
+.titleTextYellow {
+	color: #FFD54F;
+}
+
+.bgImage {
+	width: 100%;
+	max-height: 430px;
+	object-fit: cover;
+}
+
+.btnGroup {
+	position: absolute;
+	top: 40%;
+	left: 15%;
+}
+
+.btnLight {
+	padding: 13px 20px;
+	background: #FFFFFF;
+	border-radius: 10px 10px 0px 0px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	color: #664EF9;
+}
+.btnOutlineLight {
+	padding: 13px 20px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	background: rgba(45, 57, 136, 0.5);
+	color: #FFFFFF;
+}

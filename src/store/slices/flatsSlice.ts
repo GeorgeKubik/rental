@@ -5,12 +5,14 @@
 		loading: boolean;
 		error: string;
 		flats: IFlats[];
+		filters: string
 	}
 
 	const initialState: FlatsSlice = {
 		loading: false,
 		error: '',
 		flats: [],
+		filters: 'flats'
 	}
 
 	export const flatsSlice = createSlice({
