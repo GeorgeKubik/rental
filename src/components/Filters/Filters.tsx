@@ -21,9 +21,6 @@ import bgImage from '../../assets/img/mainPage/bg.png';
 				</button>
 			)
 		})
-
-
-
 		return (
 			<>
 				<div className={styles.wrapper}>

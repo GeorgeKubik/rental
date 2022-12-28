@@ -1,0 +1,35 @@
+.listItem {
+	height: 50px;
+	margin-top: 10px;
+	border-bottom: 1px solid rgba($color: #664EF9, $alpha: .1);
+}
+.listItem:last-child {
+	border-bottom: none;
+}
+/* .listItem::after {
+	position: absolute;
+	top: -12px;
+	content: '';
+	height: 1px;
+	width: 100%;
+	opacity: 0.1;
+	background-color: #664EF9;
+} */
+
+.title {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	color: #1E2123;
+	cursor: pointer;
+}
+.title:hover {
+	color: #664EF9;
+}
+.data {
+	margin-top: 6px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: #8291A3;
+}

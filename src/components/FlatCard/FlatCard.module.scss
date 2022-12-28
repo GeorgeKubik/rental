@@ -1,0 +1,137 @@
+@import "../../style/variables.scss";
+
+.bloks {
+	max-width: 406px;
+	min-height: 522px;
+	border-radius: 10px;
+	box-shadow: 0px 20px 40px rgba(135, 124, 202, 0.15);
+}
+
+.img {
+	background: #E0E0E0;
+	width: 100%;
+	min-height: 226px;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+.blockInfo {
+	padding: 0 19px;
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.price {
+	position: relative;
+	font-weight: 700;
+	font-size: 20px;
+	color: $main-color;
+	text-transform: uppercase;
+}
+.textPrice {
+	position: absolute;
+	font-weight: 400;
+	font-size: 14px;
+	color: #BDBDBD;
+	text-transform: lowercase;
+}
+.numberOfPeople,
+.rooms,
+.squareMeter {
+	padding: 10px 8px;
+	background: #F8F8F8;
+	border-radius: 18px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: #686868;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 5px;
+}
+.street {
+	width: 47%;
+	padding: 0 19px;
+	margin-top: 32px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #000000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.iconCity {
+	color: #BDBDBD;
+}
+.blockMetro {
+	margin-top: 11px;
+	padding: 0 19px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #000000;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.metro {
+	margin-right: 30px;
+}
+.district {
+	position: relative;
+}
+.district::before {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -10px;
+	content: '';
+	width: 5px;
+	height: 5px;
+	background: #BDBDBD;
+	border-radius: 100%;
+}
+.descr {
+	padding: 0 19px 12px 19px;
+	margin-top: 20px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: #8291A3;
+	border-bottom: 1px solid rgba($color: #664EF9, $alpha: .1);
+}
+.blockBottom {
+	padding: 0 19px 12px 19px;
+	margin-top: 13px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.contact {
+	padding: 10px 15px 10px 18px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	color: #664EF9;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0px 5px 20px rgba(0, 96, 206, 0.1);
+	border-radius: 18px;
+}
+.iconPhone {
+	margin-right: 13px;
+}
+.detail {
+	padding: 10px 15px;
+	color: #FEC100;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	background: rgba(255, 213, 79, 0.1);
+	border-radius: 17px;
+}

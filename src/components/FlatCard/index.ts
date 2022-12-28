@@ -1,3 +1,3 @@
-import FlatCard from "./FlatCard";
+import { FlatCard } from "./FlatCard";
 
 export default FlatCard;

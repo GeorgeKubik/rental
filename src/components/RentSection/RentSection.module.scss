@@ -1,0 +1,74 @@
+@import '../../style/variables.scss';
+@import '../../style/buttons.scss';
+
+.wrapper {
+	max-height: 804px;
+	padding: 114px 40px 90px 40px;
+}
+.sectionHeader {
+	display: flex;
+	justify-content: space-between;
+}
+.subTitle {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: uppercase;
+	background: linear-gradient(90deg, #9d94ff 0%, #6b50e9 94.5%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.title {
+	margin-top: 15px;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 30px;
+	color: #000000;
+}
+
+.slider {
+	margin-top: 15px;
+}
+
+.sectionFooter {
+	margin-top: 30px;
+	max-width: 360px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.offer {
+	position: relative;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 73px;
+	color: #1E2123;
+	&:after {
+		position: absolute;
+		top: 14px;
+		right: -21px;
+		content: "";
+		width: 1px;
+		height: 70px;
+		background: #664EF9;
+		opacity: 0.1;
+	}
+	
+}
+.plus {
+	color: #664EF9;
+}
+.text {
+	margin-top: 4.5px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: #8291A3;
+	opacity: 0.6;
+}
+.btn {
+	margin-top: 5px;
+	box-shadow: 0px 15px 40px rgba(0, 96, 206, 0.15);
+}

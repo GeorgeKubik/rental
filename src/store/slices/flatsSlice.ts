@@ -24,7 +24,7 @@
 			},
 			fetchSuccess(state, action: PayloadAction<IFlats[]>) {
 				state.loading = false;
-				state.flats = action.payload; 
+				state.flats = action.payload;
 			},
 			fetchError(state, action: PayloadAction<Error>) { 
 				state.loading = false;

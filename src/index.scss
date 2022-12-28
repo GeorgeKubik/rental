@@ -14,7 +14,6 @@ code {
     monospace;
 }
 
-
 //! Уточнить, как лучше прописать эти стили в normalize
 a {
 	text-decoration: none;
@@ -26,11 +25,15 @@ ul {
 }
 
 button {
+	padding: 0;
 	border: none;
 	background: none;
 	cursor: pointer;
 }
 
 h1, h2, h3 {
+	margin: 0;
+}
+p {
 	margin: 0;
 }

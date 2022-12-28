@@ -8,19 +8,18 @@
 	
 		const FlatsPage = () => {
 			const dispatch = useAppDispatch();
-			const {error, loading, filters, flats} = useAppSelector(state => state.flats)
-			console.log(flats);
+			const {error, loading, filters, flats} = useAppSelector(state => state.flats);
 			
 			useEffect(() => {
 				dispatch(fetchData())
 			}, [])
 			
-		
-
 			return (
 				<div>
 					<h1>Квартиры</h1>
-					{/* {flats.map(flat => <FlatCard key={flat.id} flats={flat}/>)} */}
+					{
+						flats.map(flat => <FlatCard key={flat.id} flats={flat}/>)
+					}
 				</div>
 			)
 		}
