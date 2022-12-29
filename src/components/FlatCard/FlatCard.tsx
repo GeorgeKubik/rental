@@ -18,13 +18,16 @@
 						<div className={styles.price}>
 							{flats.price} byn
 							<br />
-							<span className={styles.textPrice}>за сутки</span>
+							<div className={styles.textPrice}>за сутки</div>
 						</div>
 						<div className={styles.numberOfPeople}><User/> {flats.numberOfPeople} (2 + 2)</div>
 						<div className={styles.rooms}>{flats.rooms} комн.</div>
 						<div className={styles.squareMeter}>{flats.squareMeter} м</div>
 					</div>
-					<div className={styles.street}><IconCity className={styles.iconCity}/> {flats.city}, {flats.street}</div>
+					<div className={styles.streetBlock}>
+						<div className={styles.city}><IconCity className={styles.iconCity}/>{flats.city},</div> 
+						<div className={styles.street}>{flats.street}</div>
+					</div>
 					<div className={styles.blockMetro}>
 						<div className={styles.metro}><Metro/> {flats.metro}</div>
 						<div className={styles.district}>{flats.district}</div>

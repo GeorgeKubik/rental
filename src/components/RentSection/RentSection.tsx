@@ -1,8 +1,8 @@
 import styles from './RentSection.module.scss';
-import FlatCard from '../FlatCard/index';
 import { useAppDispatch, useAppSelector } from '../../hook/redux';
 import { useEffect} from 'react';
 import { fetchData } from '../../store/actions/flatsActions';
+import Carousel from '../Carousel/index';
 /* import {ReactComponent as Metro} from '../../assets/img/slider/metro.svg'; */
 
 const RentSection = () => {
@@ -39,12 +39,8 @@ const RentSection = () => {
 					</select>
 				</div>
 				</div>
-				<div className={styles.slider}>
-					<div className={styles.slide}>
-						{/* {
-							flats.map(flat => <FlatCard key={flat.id} flats={flat}/>)
-						} */}
-					</div>
+				<div className={styles.sliderBlock}>
+					<Carousel/>
 				</div>
 				<div className={styles.sectionFooter}>
 					<div>
