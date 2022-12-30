@@ -1,15 +1,68 @@
 	import styles from './Header.module.scss';
 
-	import {Link} from 'react-router-dom';
-
+	
 	import {ReactComponent as Heart} from '../../assets/img/header/heart.svg';
 	import {ReactComponent as IconMap} from '../../assets/img/header/icon_map.svg';
 	import {ReactComponent as IconFlat} from '../../assets/img/header/icon_flat.svg';
 	import logo from '../../assets/img/header/logo.png';
+	import { useAppSelector } from '../../hook/redux';
+	import {Link} from 'react-router-dom';
 
 	import Hamburger from '../Hamburger';
+	import Select from '../Select/index';
+
 
 	const Header = () => {
+		
+		const {error, loading, flats} = useAppSelector(state => state.flats);
+
+		const listMenu:any= flats.map((city, index) => 
+			<Link to='/flats'>
+				<li className={styles.listMenu} key={index}> 
+					Квартиры на сутки в {city.city}
+				</li>
+			</Link>);
+		
+		const menu:string[] = [
+			"Коттеджи и усадьбы",
+			"Квартиры на сутки",
+			"Бани и Сауны",
+			"Авто напрокат"
+		]
+		const menuItem = menu.map((title, index) => 
+		index === 0 ? <ul 
+							key={index} 
+							className={`${styles.rentalMenuItem} ${styles.flat}`}
+						>
+							<Select menu={title} city={listMenu} />
+							<IconFlat className={styles.iconFlat} />
+						</ul>
+	              :
+						<ul 
+							key={index} 
+							className={styles.rentalMenuItem}
+						>
+							<Select menu={title} city={listMenu}/>
+						</ul>
+					)
+		/* const menuItem = menu.map((title, index) => { 
+			if (index === 0) {
+				return <ul 
+							key={index} 
+							className={`${styles.rentalMenuItem} ${styles.flat}`}
+						 >
+							<Select menu={title} city={listMenu} />
+							<IconFlat className={styles.iconFlat} />
+						 </ul>
+			}
+			return <ul 
+						key={index} 
+						className={styles.rentalMenuItem}
+					 >
+						<Select menu={title} city={listMenu}/>
+					 </ul>
+		}); */
+		
 		return (
 			<>
 				<header className={styles.header}>
@@ -42,35 +95,9 @@
 					<Link to="/" >
 						<img src={logo} alt="logo" className={styles.logo} />
 					</Link>
-					<ul className={styles.rentalMenu}>
-						<li>
-							<Link to="/flats" className={`${styles.rentalMenuItem} ${styles.flat}`}>
-								Квартиры на сутки
-								<IconFlat className={styles.iconFlat}/>
-							</Link>
-							{/* <select name="select" id="select">
-								<option value="1">1</option>
-								<option selected value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-							</select> */}
-						</li>
-						<li>
-							<Link to="/house" className={styles.rentalMenuItem}>
-								Коттеджи и усадьбы
-							</Link>
-						</li>
-						<li>
-							<Link to="/both" className={styles.rentalMenuItem}>
-								Бани и Сауны
-							</Link>
-						</li>
-						<li>
-							<Link to="/auto" className={styles.rentalMenuItem}>
-								Авто напрокат
-							</Link>
-						</li>
-					</ul>
+					<div className={styles.rentalMenu}>
+						{menuItem}
+					</div>
 					<div className={styles.btnWrapper}>
 						<button className={styles.btn}>+ Разместить объявление</button>
 						<Hamburger />

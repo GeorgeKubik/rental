@@ -13,13 +13,15 @@
 			useEffect(() => {
 				dispatch(fetchData())
 			}, [])
-			
+			const flatsInfo = flats.map(flat => <FlatCard key={flat.id} flats={flat}/>)
 			return (
 				<div>
-					<h1>Квартиры</h1>
-					{
-						flats.map(flat => <FlatCard key={flat.id} flats={flat}/>)
-					}
+					<div className={styles.wrapper}>
+						<h1>Найдено number результата</h1>
+						<div className={styles.flatsBlock}>
+							{flatsInfo}
+						</div>
+					</div>
 				</div>
 			)
 		}

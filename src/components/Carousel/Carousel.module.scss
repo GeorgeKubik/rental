@@ -1,2 +1,29 @@
-@import "slick-carousel/slick/slick.scss";
-@import "slick-carousel/slick/slick-theme.scss";
+.slider {
+	position: relative;
+	width: calc(100% - 20px);
+	height: calc(100% - 20px);
+	left: 10px;
+	top: 10px;
+}
+.next {
+	padding: 13.14px 16.43px;
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	transform: translateX(calc(-50% + 26px));
+	border-radius: 100%;
+	border: 1px solid #664EF9;
+}
+.prev {
+	padding: 13.14px 16.43px;
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	transform: translateX(calc(-50% - 26px));
+	border-radius: 100%;
+	border: 1px solid #664EF9;
+}
+.next:hover,
+.prev:hover {
+	background: rgba(102, 78, 249, 0.1);
+}

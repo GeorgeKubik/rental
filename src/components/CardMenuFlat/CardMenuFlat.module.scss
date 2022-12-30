@@ -38,10 +38,15 @@
 		border-radius: 100%;
 	}
 	.town {
-		/* display: none; */
 		position: absolute;
 		top: 126px;
 		left: 37px;
+		width: 80%;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 14px 17px;
+	}
+	.townItem {
 		padding: 8px 14px;
 		background: #664EF9;
 		border-radius: 16px;

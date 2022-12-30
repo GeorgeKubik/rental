@@ -10,6 +10,8 @@
 	}
 
  	export function FlatCard ({flats}: FlatCardProps) {
+		const descr = flats.descr ? `${flats.descr.slice(0, 220)}...`: flats.descr;
+
 		return (
 			<>
 				<div className={styles.bloks}>
@@ -32,7 +34,7 @@
 						<div className={styles.metro}><Metro/> {flats.metro}</div>
 						<div className={styles.district}>{flats.district}</div>
 					</div>
-					<div className={styles.descr}>{flats.descr}</div>
+					<div className={styles.descr}>{descr}</div>
 					<div className={styles.blockBottom}>
 						<button className={styles.contact}><IconPhone className={styles.iconPhone}/>Контакты</button>
 						<button className={styles.detail}>Подробнее</button>

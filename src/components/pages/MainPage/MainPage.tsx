@@ -25,10 +25,10 @@
 			<>
 				<div className="container">
 					<Filters /* filters={state} onFilterSelect={onFilterSelect} *//>
-					{/* <CardsMenu/> */}
+					<CardsMenu/>
 					<RentSection />
 					<MapSearch />
-					{/* <Description /> */}
+					<Description />
 				</div>
 			</>
 		)

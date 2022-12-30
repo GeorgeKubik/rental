@@ -6,6 +6,8 @@
 	import CardMenuAuto from '../CardMenuAuto/index';
 
 	const CardsMenu = () => {
+
+
 		return (
 			<>
 				<div className={styles.wrapper}>
