@@ -23,11 +23,13 @@
 					infinite={true}
 					className={styles.slider}
 				>
-					<Slider>
+					<Slider className={styles.slide}>
 						{slide}
 					</Slider>
-					<ButtonBack><Prev className={styles.prev}/></ButtonBack>
-					<ButtonNext><Next className={styles.next}/></ButtonNext>
+					<div className={styles.wrapperArrow}>
+						<ButtonBack className={styles.prev}><Prev /></ButtonBack>
+						<ButtonNext className={styles.next}><Next /></ButtonNext>
+					</div>
 				</CarouselProvider>
 			</>
 		)

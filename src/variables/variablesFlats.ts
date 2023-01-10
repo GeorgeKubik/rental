@@ -9,7 +9,15 @@ export interface IFlats {
 	numberOfPeople: number;
 	squareMeter: number;
 	metro: string;
+	additionally: string;
 	id: number;
+}
+
+export interface INews {
+	img: string;
+	title: string;
+	data: string;
+	id: number
 }
 
 /* export interface ServerResponse<T> {

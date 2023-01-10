@@ -1,0 +1,68 @@
+@import '../../../../style/variables.scss';
+
+
+.wrapper {
+	background: linear-gradient(90deg, rgba($color: #94AFFF, $alpha: .1) 0%, rgba($color: #4E64F9, $alpha: .1) 94.5%);
+}
+.filters {
+	padding: 42px 0 63px 0;
+}
+.title {
+	margin-top: 30px;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 100%;
+	display: flex;
+	align-items: center;
+	color: #1E2123;
+}
+.titleList {
+	margin-top: 40px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 100%;
+	display: flex;
+	align-items: center;
+	color: #1E2123;
+}
+.list {
+	margin-top: 30px;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px;
+}
+.listItem {
+	padding: 6px 10px;
+	background: rgba(102, 78, 249, 0.1);
+	border-radius: 17px;	
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+	color: $main-color;
+}
+.subtitle {
+	display: flex;
+} 
+.subtitleText {
+	margin-left: 16px;
+	position: relative;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+	display: flex;
+	align-items: center;
+	color: #686868;
+}
+.subtitleText::before {
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: -9px;
+	transform: translateY(-50%);
+	width: 3px;
+	height: 3px;
+	background: $main-color;
+	border-radius: 100%;
+}

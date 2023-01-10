@@ -1,6 +1,7 @@
+@import "../../style/variables.scss";
+
 
 .wrapper {
-	position: relative;
 	position: relative;
 	max-height: 430px;
 }
@@ -21,7 +22,6 @@
 
 .bgImage {
 	width: 100%;
-	max-height: 430px;
 	object-fit: cover;
 }
 

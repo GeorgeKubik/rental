@@ -1,6 +1,7 @@
 
 	import styles from './NewsBlock.module.scss';
 	import NewsList from '../NewsList/index';
+	
 	const NewsBlock = () => {
 		return (
 			<>

@@ -1,5 +1,5 @@
 
-	import styles from './Select.module.scss';
+	import styles from './SelectMenuHeader.module.scss';
 	import 'react-popper-tooltip/dist/styles.css';
 	import { usePopperTooltip } from 'react-popper-tooltip';
 	import { useState, useEffect } from 'react';
@@ -9,7 +9,7 @@
 		city: string[];
 	}
 
-	const Select = ({menu, city}:SelectType) => {
+	const SelectMenuHeader = ({menu, city}:SelectType) => {
 		const [controlledVisible, setControlledVisible] = useState(false);
 
 		const {
@@ -56,4 +56,4 @@
 		);
 	}
 
-	export default Select;
+	export default SelectMenuHeader;

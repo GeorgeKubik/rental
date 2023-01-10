@@ -1,11 +1,2 @@
-.wrapper {
-	padding: 0 40px;
-}
-.flatsBlock {
-	margin-top: 40px;
-	display: grid;
-	grid-template: repeat(2, minmax(535px, auto)) / repeat(auto-fit, 406px);//29vw
-	grid-auto-rows: minmax(535px, auto);
-	gap: 24px 31px;
-	justify-content: space-between;
-}
+
+

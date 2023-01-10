@@ -5,12 +5,36 @@
 	import {ReactComponent as IconCity} from '../../assets/img/header/icon_flat.svg';
 	import {ReactComponent as Metro} from '../../assets/img/slider/metro.svg';
 	import {ReactComponent as IconPhone} from '../../assets/img/slider/phone.svg';
+	import ContactCard from '../ContactCard';
+
+	import { useState } from 'react';
+
 	interface FlatCardProps {
-		flats: IFlats
+		flats: IFlats;
 	}
 
  	export function FlatCard ({flats}: FlatCardProps) {
-		const descr = flats.descr ? `${flats.descr.slice(0, 220)}...`: flats.descr;
+
+		const [textCard, setTextCard] = useState(`${flats.descr.slice(0, 220)}...`);
+		const [openText, setOpenText] = useState(false);
+		const [contact, setContact] = useState(false);
+		
+		const expandText = () => {
+			if (!openText) {
+				setTextCard(flats.descr);
+				setOpenText(true);
+			}
+			if (openText) {
+				setTextCard(`${flats.descr.slice(0, 220)}...`);
+				setOpenText(false);
+			}
+		}
+
+		const openContact = contact ? {'display': 'block'} : {'display': 'none'};
+
+		const onhandleClick = () => {
+			setContact(!contact);
+		}
 
 		return (
 			<>
@@ -34,10 +58,13 @@
 						<div className={styles.metro}><Metro/> {flats.metro}</div>
 						<div className={styles.district}>{flats.district}</div>
 					</div>
-					<div className={styles.descr}>{descr}</div>
+					<div className={styles.descr}>{textCard}</div>
 					<div className={styles.blockBottom}>
-						<button className={styles.contact}><IconPhone className={styles.iconPhone}/>Контакты</button>
-						<button className={styles.detail}>Подробнее</button>
+						<div style={openContact} className={styles.contactCard}>
+							<ContactCard/>
+						</div>
+						<button onClick={onhandleClick} className={styles.contact}><IconPhone className={styles.iconPhone}/>Контакты</button>
+						<button onClick={expandText} className={styles.detail}>Подробнее</button>
 					</div>
 				</div>
 			</>

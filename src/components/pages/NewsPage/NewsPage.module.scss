@@ -1,0 +1,67 @@
+@import "../../../style/variables.scss";
+
+.wrapper {
+	padding: 62px 40px 0 40px;
+	background: linear-gradient(90deg, #94AFFF 0%, #4E64F9 94.5%);
+}
+.subtitle {
+	display: flex;
+}
+.subtitleText {
+	margin-left: 16px;
+	position: relative;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+	display: flex;
+	align-items: center;
+	color: #686868;
+}
+.subtitleText::before {
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: -9px;
+	transform: translateY(-50%);
+	width: 3px;
+	height: 3px;
+	background: $main-color;
+	border-radius: 100%;
+}
+.search {
+	margin-top: 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.title {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 100%;
+	display: flex;
+	align-items: center;
+	color: #1E2123;
+}
+.input {
+	padding: 12px 0 10px 21px;
+	border: none;
+	min-width: 612px;
+	box-shadow: 0px 10px 20px rgba(0, 96, 206, 0.05);
+	border-radius: 20px;
+}
+.searchIcon{
+	padding: 10px 18px;
+	border-radius: 19px;
+	position: absolute;
+	right: 38px;
+	background: $main-color;
+}
+.news {
+	margin-top: 40px;
+	display: grid;
+	grid-template: repeat(2, minmax(500px, auto)) / repeat(auto-fit, 406px);
+	grid-auto-rows: minmax(535px, auto);
+	gap: 24px 31px;
+	justify-content: space-between;
+}
+

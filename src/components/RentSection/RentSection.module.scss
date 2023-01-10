@@ -2,7 +2,7 @@
 @import '../../style/buttons.scss';
 
 .wrapper {
-	padding: 114px 40px 90px 40px;
+	padding: 114px 0 90px 0;
 }
 .sectionHeader {
 	display: flex;
@@ -27,6 +27,15 @@
 	color: #000000;
 }
 
+.select {
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.selectMetro {
+	margin-right: 30px;
+	
+}
 .sliderBlock {
 	margin-top: 55px;
 }

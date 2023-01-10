@@ -1,0 +1,47 @@
+@import '../../../../style/variables.scss';
+
+.wrapper {
+	margin-top: 20px;
+	width: 100%;
+	background: #fff;
+	min-height: 314px;
+}
+.selectWrapper {
+	width: 45.5vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.select {
+	padding: 9px 0 9px 11px;
+	width: 200px;
+	height: 37px;
+	background: #F8F8F8;
+	border-radius: 22px;
+	border: none;
+}
+.title {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: $main-color;
+	margin-bottom: 11px;
+}
+.option {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: #1E2123;
+}
+.checkboxList {
+	margin-top: 32px;
+}
+.itemList {
+	margin-bottom: 13px;
+}
+.itemList:last-child {
+	margin-bottom: 0;
+}
+.inputCheckbox {
+	margin-right: 13px;
+}

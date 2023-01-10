@@ -1,0 +1,25 @@
+.wrapper {
+	position: relative;
+	width: 180px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&::after {
+		position: absolute;
+		left: 0;
+		content: '';
+		width: 1px;
+		height: 100%;
+		background: rgba($color: #664EF9, $alpha: .1);
+	}
+}
+.btnClear {
+	padding: 10px 16px;
+	background: #F8F8F8;
+	border-radius: 22px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	color: #1E2123;
+}

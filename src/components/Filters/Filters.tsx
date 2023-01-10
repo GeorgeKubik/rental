@@ -23,12 +23,14 @@ import bgImage from '../../assets/img/mainPage/bg.png';
 		})
 		return (
 			<>
-				<div className={styles.wrapper}>
-					<div className={styles.btnGroup}>
-						{buttons} 
+				<div className={styles.container}>
+					<div className={styles.wrapper}>
+						<div className={styles.btnGroup}>
+							{buttons} 
+						</div>
+						<h1 className={styles.title}>Sdaem.by - у нас живут <span className={styles.titleTextYellow}>ваши объявления</span></h1>
+						<img className={styles.bgImage} src={bgImage} alt="bgImage" />
 					</div>
-					<h1 className={styles.title}>Sdaem.by - у нас живут <span className={styles.titleTextYellow}>ваши объявления</span></h1>
-					<img className={styles.bgImage} src={bgImage} alt="bgImage" />
 				</div>
 			</>
 		)

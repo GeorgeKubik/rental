@@ -1,11 +1,11 @@
 @import "../../style/variables.scss";
 
 .bloks {
-	width: 90%;
-	min-height: 90%;
+	width: 100%;
+	min-height: 100%;
 	border-radius: 10px;
 	box-shadow: 0px 20px 40px rgba(135, 124, 202, 0.15);
-	
+	margin: 0 auto;
 }
 
 .img {
@@ -113,6 +113,7 @@
 	border-bottom: 1px solid rgba($color: #664EF9, $alpha: .1);
 }
 .blockBottom {
+	position: relative;
 	padding: 0 19px 12px 19px;
 	margin-top: 13px;
 	display: flex;
@@ -131,6 +132,14 @@
 	box-shadow: 0px 5px 20px rgba(0, 96, 206, 0.1);
 	border-radius: 18px;
 }
+.contactCard {
+	position: absolute;
+	bottom: 70px;
+	right: 40%;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 40px rgba(135, 124, 202, 0.3);
+}
 .iconPhone {
 	margin-right: 13px;
 }
@@ -142,4 +151,7 @@
 	line-height: 17px;
 	background: rgba(255, 213, 79, 0.1);
 	border-radius: 17px;
+}
+.detail:hover {
+	background: rgba(255, 213, 79, 0.1);
 }

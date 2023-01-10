@@ -1,5 +1,7 @@
+@import "../../style/variables.scss";
+
 .wrapper {
-	padding: 86px 40px 0 40px;
+	padding: 86px 0 0 0;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: minmax(270px, 1fr);
