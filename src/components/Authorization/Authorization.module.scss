@@ -1,0 +1,9 @@
+@import '../../style/variables.scss';
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 700px;
+	background: $main-color;
+}

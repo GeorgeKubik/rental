@@ -1,13 +1,12 @@
 
-	import styles from './FlatsPageAllOptions.module.scss';
+	import styles from './FlatsPageBtnAllOptions.module.scss';
 	import {ReactComponent as IconOptions} from '../../../../assets/img/flatsPageFilters/options.svg';
-	import { useState } from 'react';
 
 	interface Modal {
 		onOpenModal: () => void;
 	}
 
-	const FlatsPageAllOptions = ({onOpenModal}:Modal) => {
+	const FlatsPageBtnAllOptions = ({onOpenModal}:Modal) => {
 
 		return (
 			<>
@@ -21,5 +20,5 @@
 		)
 	}
 
-	export default FlatsPageAllOptions;
+	export default FlatsPageBtnAllOptions;
 

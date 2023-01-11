@@ -3,7 +3,7 @@
 	
 	import SelectFlatsPageFilter from '../SelectFlatsPageFilter/index';
 	import FlatsPageFilterPrice from '../FlatsPageFilterPrice/index';
-	import FlatsPageAllOptions from '../FlatsPageAllOptions/index';
+	import FlatsPageAllOptions from '../FlatsPageBtnAllOptions/index';
 	import OptionsModal from '../OptionsModal/index';
 	import ClearFilter from '../FlatsPageСlearFilter/index';
 	import OpenObject from '../FlatsPageBtnOpenObject';

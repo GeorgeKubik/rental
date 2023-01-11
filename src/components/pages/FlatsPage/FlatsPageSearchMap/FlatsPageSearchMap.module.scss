@@ -1,0 +1,47 @@
+@import '../../../../style/variables.scss';
+
+.wrapper {
+	background: linear-gradient(0deg, #7e6af3 -2.23%, #6540cd 100.04%);
+}
+.mainContent {
+	padding-top: 75px;
+	min-height: 310px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.title {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 30px;
+	color: #ffffff;
+}
+
+.descr {
+	margin-top: 20px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.btnSearch {
+	padding: 10px 18px;
+	border-radius: 19px;
+	margin-top: 23px;
+	background: #ffffff;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	color: #1e2123;
+	&:hover {
+		background: #fff;
+		color: $gold-color;
+	}
+}
+.iconMap {
+	color: $gold-color;
+	margin-right: 12px;
+}

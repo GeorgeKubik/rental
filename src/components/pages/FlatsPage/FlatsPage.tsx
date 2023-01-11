@@ -3,6 +3,7 @@
 	import ApartmentPagination from './ApartmentPagination/index';
 	import FlatsPageRecommendation from './FlatsPageRecommendation/index';
 	import FlatsPageFilter from './FlatsPageFilter/index';
+	import SearchMap from './FlatsPageSearchMap/index';
 
 		const FlatsPage = () => {
 
@@ -11,6 +12,7 @@
 					<FlatsPageRecommendation/>
 					<FlatsPageFilter/>
 					<ApartmentPagination />
+					<SearchMap/>
 				</div>
 			)
 		}
