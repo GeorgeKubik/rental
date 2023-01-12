@@ -7,14 +7,19 @@
 	import logo from '../../assets/img/header/logo.png';
 	import { useAppSelector } from '../../hook/redux';
 	import {Link} from 'react-router-dom';
+	import {useState} from 'react';
 
-	import Hamburger from '../Hamburger';
+
+	import Hamburger from '../Hamburger/index';
+	import Authorization from '../Authorization/index';
 	import SelectMenuHeader from '../SelectMenuHeader/index';
 
 
 	const Header = () => {
 		
 		const {error, loading, flats} = useAppSelector(state => state.flats);
+		const [openModal, setOpenModal] = useState(false);
+
 
 		const listMenu = flats.map((city, index):any => 
 			<Link className={styles.listMenuLink}  key={index} to='/flats'>
@@ -86,9 +91,19 @@
 			// 			<SelectMenuHeader menu={title} city={listMenu}/>
 			// 		 </ul>
 		});
+		const visibleModal = openModal ? {'display': 'block'} : {'display': 'none'};
+
 		
+		const onClickModal = () => {
+			setOpenModal(!openModal);
+		}
+		
+
 		return (
-			<>
+			<>	
+				<div style={visibleModal} className={styles.authorizationWrapper}>
+					<Authorization/>
+				</div>
 				<div className={styles.container}>
 					<header className={styles.header}>
 							<div>
@@ -113,7 +128,7 @@
 									<a href="#"className={styles.bookmarks}>Закладки</a>
 									<a href="#"><Heart className={styles.heart}/></a>
 								</div>
-								<a className={styles.registration} href="#">Вход и регистрация</a>
+								<button onClick={onClickModal} className={styles.registration} >Вход и регистрация</button>
 							</div>
 					</header>
 				</div>

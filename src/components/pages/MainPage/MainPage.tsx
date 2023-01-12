@@ -8,8 +8,9 @@
 	import RentSection from '../../RentSection/index';
 	import MapSearch from '../../MapSearch/index';
 	import Description from '../../Description/index';
-	
-	import Authorization from '../../Authorization';
+import Registration from '../../Registration';
+
+
 	const MainPage = () => {
 		/* const dispatch = useAppDispatch();
 		const {error, loading, filters, flats} = useAppSelector(state => state.flats);
@@ -26,7 +27,7 @@
 		return (
 			<>
 				<div className="container">
-					<Authorization/>
+					<Registration/>
 					<Filters /* filters={state} onFilterSelect={onFilterSelect} *//>
 					<CardsMenu/>
 					<RentSection />

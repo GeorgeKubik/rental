@@ -13,12 +13,13 @@ import NewsPage from '../pages/NewsPage/index';
 import {Routes, Route} from 'react-router-dom';
 
 
+
 function App() {
 	return (
 		<>	
 			<Header />
 					<Routes>
-						<Route path='/'element={<MainPage />}/>
+						<Route path='/' element={<MainPage />}/>
 						<Route path='flats' element={<FlatsPage />}/>
 						{/* <Route path='flats/:id' element={<FlatPage />}/> */}
 						<Route path='house' element={<HousePage/>}/>

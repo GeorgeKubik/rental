@@ -6,10 +6,10 @@
 	import {ReactComponent as IconPassword} from '../../assets/img/authorization/iconPassword.svg';
 	 
 	interface IFormInputs {
-		firstName: string;
-		lastName: string;
+		name: string;
+		password: string;
 	 }
-	 const onSubmit: SubmitHandler<IFormInputs> = data => console.log(data);
+	const onSubmit: SubmitHandler<IFormInputs> = data => console.log(data);
 
 	const Authorization = () => {
 		const { register, formState: { errors }, handleSubmit } = useForm<IFormInputs>();
@@ -29,21 +29,27 @@
 						<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
 							<input 
 								className={styles.login} 
-								type='text' 
-								{...register("firstName", { required: true })} 
+								type='text'
+								{...register("name", { required: true })} 
 								placeholder="Логин"
 							/>
 							 <IconLogin className={styles.iconLogin}/>
 							<input 
 								className={styles.password} 
-								type='password'  
-								{...register("lastName", { required: true })}
+								type='password' 
+								{...register("password", { required: true })}
 								placeholder="Пароль"
 							/>
-							 {errors.firstName && "Password is required"}
+							 {errors.name && "Password is required"}
 							 <IconPassword className={styles.iconPassword}/>
 							<div className={styles.bloks}>
-								<div className={styles.checkBoxText}>Запомнить меня</div>
+								<div className={styles.checkboxBlock}>
+									<div className={styles.checkboxWrapper}>
+										<input className={styles.checkbox} id="checkbox" type="checkbox"/>
+										<label className={styles.checkboxLabel} htmlFor="checkbox"></label>
+									</div>
+									<div className={styles.checkboxText}>Запомнить меня</div>
+								</div>
 								<div className={styles.restorePassword}>Забыли пароль?</div>
 							</div>
 							<button className={styles.FormBtn} type='submit'>Войти</button>
